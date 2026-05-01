@@ -5,10 +5,18 @@
   <title>記帳水豚</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   
-  <!-- 你的 PWA 設定 (manifest, icons 等等) -->
-  <link rel="manifest" href="manifest.json">
+  <!-- PWA & 沉浸式原生 App 設定 -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="記帳水豚">
+  <meta name="theme-color" content="#f8fafc">
+  
+  <!-- App Icon -->
+  <link rel="apple-touch-icon" href="https://i.ibb.co/p7JSjct/163a33ba-4290-41dc-a22c-42984ed8397e.png">
+  <link rel="icon" type="image/png" href="https://i.ibb.co/p7JSjct/163a33ba-4290-41dc-a22c-42984ed8397e.png">
+  
+  <!-- Android PWA Manifest (Data URI) -->
+  <link rel="manifest" href="data:application/json;charset=utf-8,%7B%22name%22%3A%22%E8%A8%98%E5%B8%B3%E6%B0%B4%E8%B1%9A%22%2C%22short_name%22%3A%22%E8%A8%98%E5%B8%B3%E6%B0%B4%E8%B1%9A%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23f8fafc%22%2C%22theme_color%22%3A%22%23f8fafc%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22https://i.ibb.co/p7JSjct/163a33ba-4290-41dc-a22c-42984ed8397e.png%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fpng%22%7D%5D%7D">
 
   <style>
     body, html {
@@ -42,7 +50,7 @@
   
   <!-- 將 iframe 包在這個帶有 padding 的容器裡 -->
   <div class="app-container">
-    <!-- 替換 src 為你實際的 Google Apps Script 網址 -->
+    <!-- 請替換 src 為您實際的 Google Apps Script 發布網址 -->
     <iframe src="https://script.google.com/macros/s/AKfycbyvPu1hrlGzdwKd7nf9b2Aw1C3SAVkXeiTp-NVLXOIfMCWf2o1EefrRDDBuoxbV44TcKA/exec?p=2030house"></iframe>
   </div>
 
